@@ -13,8 +13,10 @@ for (const btn of allBtn) {
             e.target.style.backgroundColor = 'green';
             e.target.style.color = 'white';
 
+            e.target.disabled = true
+
             const seatNumber = e.target.innerText;
-            console.log(seatNumber)
+            
             const selectedSeatPrice = document.getElementById("selected-seat-price");
 
             const li = document.createElement("li");
